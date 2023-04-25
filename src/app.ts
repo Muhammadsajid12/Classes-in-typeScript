@@ -96,3 +96,18 @@ it.displayReport();
 // it.addEmployee("sajid");
 // it.addEmployee("Max");
 // it.printEmpInfo();
+
+// -------------------------------Decorator🐾🐾👌..................................................
+function auh(constructor: Function) {
+  console.log("User is authenticated...");
+  console.log(constructor);
+}
+@auh
+class userData {
+  names = "sajid";
+  constructor() {
+    console.log(` This is the user name:${this.names}`);
+  }
+}
+
+const user = new userData();
